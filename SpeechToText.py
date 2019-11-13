@@ -9,7 +9,7 @@ with mic as source:
     r.adjust_for_ambient_noise (source)
     print("please speak")
     audio=r.listen(source)
-    transcript=r.recognize_google(audio)
+    transcript=r.recognize_google(audio, language='hi-IN')
     print(transcript)
 
     language="en"
